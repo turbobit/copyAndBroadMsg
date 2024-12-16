@@ -36,10 +36,6 @@ class TelegramLogin:
             print('경고: 사용자명은 @로 시작해야 합니다.')
             return
             
-        phone = input("전화번호를 입력하세요 (+82 포함): ")
-        if not phone.startswith('+'):
-            print('경고: 전화번호는 +로 시작해야 합니다.')
-            return
             
         # 비동기 작업 실행
         loop = asyncio.new_event_loop()
